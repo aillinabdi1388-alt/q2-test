@@ -25,8 +25,7 @@ for question , options , correct in questions:
 
 console.print(f"Your score is:{score}")
 console.print(f"Total correct answer: {total_correct}")
-
-
+print('hello')
 
 
 
