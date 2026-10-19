@@ -6,6 +6,10 @@ questions: list[tuple[str,list[str],str]] = [
     ("which CMS is known for its user-friendly interface?",["A:WordPress","B:Joomla","C:Drupal","D:Squaresp"], "A")
 ]
 console = Console()
+def show_results(score,total_correct):
+    console.print(f"Your score is:{score}",style="red on white")
+    console.print(f"Total correct answer: {total_correct}",style="red on white")
+
 score=0
 total_correct=0
 CORRECT_BOUNES=10
@@ -23,9 +27,7 @@ for question , options , correct in questions:
         score -=3
         console.print(f"Wrong! The correct answer is {correct}./n")
 
-console.print(f"Your score is:{score}",style="red on white")
-console.print(f"Total correct answer: {total_correct}",style="red on white")
-
+show_results(score,total_correct)
 
 
 
