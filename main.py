@@ -23,8 +23,8 @@ for question , options , correct in questions:
         score -=3
         console.print(f"Wrong! The correct answer is {correct}./n")
 
-console.print(f"Your score is:{score}")
-console.print(f"Total correct answer: {total_correct}")
+console.print(f"Your score is:{score}",style="red on white")
+console.print(f"Total correct answer: {total_correct}",style="red on white")
 print('hello')
 
 
